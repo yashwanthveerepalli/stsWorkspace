@@ -1,0 +1,43 @@
+package com.java.Practise;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Factors {
+	
+	public void Div(int n) {
+		
+		 ArrayList<Integer> num = new ArrayList<Integer>();
+	
+		int count =0;
+		
+		for(int i=1;i<=n;i++)
+		{
+			if(n%i==0)
+			{
+				num.add(i);
+				count++;
+			}
+		}
+		if(count ==2 )
+		{
+			System.out.println("The number"+n+"IS A PRIME NUMBER");
+		}
+		if(count !=2 )
+		{
+			System.out.println("The number"+n+"IS NOT A PRIME NUMBER");
+		}
+		System.out.println("Factors of number "+n+" are "+num);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s= new Scanner(System.in);
+		Factors f=new Factors();
+		System.out.println("ENter the number  ");
+		f.Div(s.nextInt());
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.java.Practise;
+
+public class reverse {
+	int array[] = {12,64,23,35,2,67,9,11};
+ 
+	public void formatting()
+	{
+		for(int i=array.length;i>0;i--)
+		{
+			System.out.print(array[i]+",");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		reverse r = new reverse();
+			r.formatting();
+
+	}
+
+}

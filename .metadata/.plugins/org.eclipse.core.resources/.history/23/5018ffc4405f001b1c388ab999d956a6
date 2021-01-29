@@ -1,0 +1,29 @@
+package com.java.Practise;
+
+import java.util.Scanner;
+
+public class EVENODD {
+	
+	public void EO(int n)
+	{
+		for(int i=0;i<n;i++)
+		{
+			if(n%2==0)
+			{
+				System.out.println(i);
+			}
+			else
+			{
+				System.out.println(i);
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s= new Scanner(System.in);
+EVENODD e=new EVENODD();
+e.EO(s.nextInt());
+	}
+
+}

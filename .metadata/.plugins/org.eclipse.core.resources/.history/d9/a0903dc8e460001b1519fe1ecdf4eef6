@@ -1,0 +1,32 @@
+package com.java.Practise;
+
+import java.util.Scanner;
+
+public class SI {
+	
+	public void calc(int p,double r,double t)
+	{
+		double intrest = p*r*t/100;
+		System.out.println("Intrest dor Principal "+p+ " at Rate "+r+ " For Time "+t+" is "+intrest);
+		double total = p + intrest;
+		System.out.println("After Time "+t+" Years you have to pay "+total+" amount including intrest");
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		SI si = new SI();
+		System.out.println("Enter principal Amount");
+		int p=s.nextInt();
+		System.out.println("Enter Intrest rate");
+		double r=s.nextDouble();
+		System.out.println("Enter time period in years");
+		double t=s.nextDouble();
+		si.calc(p, r, t);
+		
+	
+
+	}
+
+}

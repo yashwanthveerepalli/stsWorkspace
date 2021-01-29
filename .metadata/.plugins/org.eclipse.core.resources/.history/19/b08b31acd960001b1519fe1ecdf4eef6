@@ -1,0 +1,30 @@
+package com.java.Practise;
+
+import java.util.ArrayList;
+
+public class ComArr {
+	
+	public void  Intersec(int arr1[],int arr2[])
+	{
+		ArrayList<Integer> arr = new ArrayList<Integer>();
+
+				
+		for(int i : arr1)
+		{
+			for(int j :arr2)
+			{
+				i==j;
+				arr.add(i);
+				j++
+			}
+			i++;
+		}
+	}
+			
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

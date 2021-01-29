@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com.java.Practise;
+
+import java.util.Scanner;
+
+/**
+ * @author yashwanthveerepalli
+ *
+ */
+public class SOD {
+
+	
+	public void sumOfDigits(int n) {
+		int sum=0;
+		for(int i=0;n<10;i++) {
+			
+			sum = sum + n%10;
+			n=n/10;
+		}
+		System.out.println("Tke sum of the digits "+sum);
+	}
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		SOD sod = new SOD();
+		System.out.println("ENter a number");
+		sod.sumOfDigits(s.nextInt());
+		
+
+	}
+
+}

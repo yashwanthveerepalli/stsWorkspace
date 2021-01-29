@@ -1,0 +1,23 @@
+package com.java.Practise;
+
+
+public class Merge {
+
+	public void merging(String str1,String str2) {
+		int x=str1.length();
+		int y=str2.length();
+		String str= "";
+		int w=0;
+		for(int i=0;i<x+y;i++)
+		{
+			
+			str+(str1.charAt(i));
+			str2.charAt(i);
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

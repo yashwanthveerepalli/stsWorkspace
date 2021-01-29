@@ -1,0 +1,17 @@
+package com.java.Practise;
+
+public class StringRev {
+
+	
+	public void rev(String s) {
+		for(int i = s.length(), i>=0, i--)
+		{
+			
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

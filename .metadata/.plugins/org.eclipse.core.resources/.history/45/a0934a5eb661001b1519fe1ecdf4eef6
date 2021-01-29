@@ -1,0 +1,36 @@
+package com.java.Practise;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Scanner;
+public class UNQ {
+	
+	public void count(String s)
+	{ 
+	      StringBuffer s1 = new StringBuffer(s1); 
+		for (int i = 0; i < s1.length(); i++) {
+	      int count = 0;
+	      for (int j = i + 1; j < s1.length(); j++) {
+	        if (s1.charAt(i) == s1.charAt(j)) {
+	          s1.deleteCharAt(j);
+	          j--;
+	          count++;
+	        }
+	      }
+	      if (count >= 1) {
+	        s1.deleteCharAt(i);
+	        i--;
+	      }
+	    }
+	    System.out.println(s1.length());
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
