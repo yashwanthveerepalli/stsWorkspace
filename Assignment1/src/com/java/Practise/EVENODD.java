@@ -20,6 +20,7 @@ public class EVENODD {
 				//System.out.println(i);
 			}
 			else
+				//int i;
 			{
 				odd.add(i);
 				//System.out.println(i);

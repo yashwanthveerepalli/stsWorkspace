@@ -2,41 +2,29 @@ package com.java.Practise;
 
 import java.util.Scanner;
 
-//Java code to alternatively merge two strings
 public class Merge {
 
-	// Function for alternatively merging two strings
-	public static String merge(String s1, String s2)
+	public void merge(String str1, String str2)
 	{
-		// To store the final string
-		StringBuilder result = new StringBuilder();
+		String result = "";
 
-		// For every index in the strings
-		for (int i = 0; i < s1.length() || i < s2.length(); i++) {
-
-			// First choose the ith character of the
-			// first string if it exists
-			if (i < s1.length())
-				result.append(s1.charAt(i));
-
-			// Then choose the ith character of the
-			// second string if it exists
-			if (i < s2.length())
-				result.append(s2.charAt(i));
+		for (int i = 0; i < str1.length() + str2.length(); i++) {
+			if (i < str1.length())
+				result=result+(str1.charAt(i));
+			if (i < str2.length())
+				result=result+(str2.charAt(i));
 		}
-
-		return result.toString();
+		System.out.println(result);
 	}
-
-	// Driver code
 	public static void main(String[] args)
 	{
 		Scanner s = new Scanner(System.in);
-		System.out.println("ENTER A  SENTENCE 1");
+		Merge m =new Merge();
+		System.out.println("Input Str1");
 	String	str1 =s.nextLine();
-		System.out.println("ENTER A  SENTENCE 2");
+		System.out.println("Input Str2");
 		String str2 =s.nextLine();
-		System.out.println(merge(str1, str2));
+		m.merge(str1, str2);
 	}
 }
 
