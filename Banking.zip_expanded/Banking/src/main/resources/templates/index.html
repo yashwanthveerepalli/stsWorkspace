@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<center> <h2>Assignment on Spring Banking System</h2> </center>
+			<tr>
+				<div align="center">
+					<h3>
+						<a th:href="@{'/new'}">Add new Account</a>
+					</h3>
+				</div>
+			</tr>
+			<tr>
+				<div class="col-sm-5" align="center">
+					<div class="panel-body" align="center">
+						<table class="table">
+							<thead class="thead-dark">
+								<tr>
+									<th>Account ID</th>
+									<th>Account Name</th>
+									<th>Type</th>
+									<th>Address</th>
+									<th>Update</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each="Account : ${listaccount}">
+									<td th:text="${Account.Aid}">Account ID</td>
+									<td th:text="${Account.accname}">Account Name</td>
+									<td th:text="${Account.type}">Type</td>
+									<td th:text="${Account.addr}">Address</td>
+									<td><a th:href="@{'/update/' + ${Account.Aid}}">Update</a></td>
+									<td><a th:href="@{'/delete/' + ${Account.Aid}}">Delete</a></td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</div>
+
+				</div>
+
+			</tr>
+
+			</tbody>
+			</table>
+			<div>
+	</body>
+</html>
